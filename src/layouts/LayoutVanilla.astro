@@ -1,0 +1,143 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="topHeader">
+				<div class="topHeaderLeft">					
+					<p class="whiteText">
+						<a href="">Descargar</a> | Síguenos en
+						<a href="">
+							<img class="hasWhiteFiler" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAp5JREFUSEt9lk2ITmEUx3+nFMJCNkKysVAkS1KyEJNkxEJkQ43JQu+bkoUGyULRvBY+ymI2ahYyNfKxIgtZW874KNGwsbBQ1GiO9z4f957nuc87d3Xvuec5X///OecRqkcAdW/h3QoKv4Nq62wQCJqYs+qptUUNFWPJogVxsaYB28CWAkeBA8B2kE2gVa5fgPfAS4QpVOZdCYKdxpw4UTEDgSGFe8FoS81U9hMwCrxKlKIz660Bgqv9xK4UreaYeaUFgYsq3DaJuHL5DFKQr6GMFapWxtRyAzrAnRy6WkXQQwpPi8TyWj+BC8Ab4Gs4eKuShYAWgD3A2xoPU6KVoB+BtamDWuMfsFVgNiNF48AzZhZ0GzAf7US+jQp637dDVbvI5fp9EuSE4fg+gV0q7EfZmeE1jDAd8YgYPBM4GPutgM1llBshn2PA40E4AQ8RRhoH3v0csC4BPPXSBXoh0grM8RxMU7qqR3a4WhgM/oAui4cK06OL0gvyDsi4nS+udE3X/uqzaXWDgbf6G1iRZfDDZZXTKhW8BtlreijaWpWD/EHQzTGKENF3VNY30aWkD1/fQDZYBwIzCluyRpNHgp5MQIYsg5RdoNWs+luYtxMIpx3IptbHBSYzB02bC11UeoGmDoNWZk2CwwrTTQb+xxLgM7CxZoedjs5BYJHQQQOL2uN4hqo85qwd7EPAi+JSsA7czLEsqkOvqLQb9J2XSELTuNaqYXU+68zq0/WBpandXEH/OshYBnhrmgoqD0BHMsq2HNglA9zsA34pDSxbONluOBW6dU2Qd0F6wajFYA6Vs6DP2xvNF7v4BOyWo5wBjgBTwN3g7BxwWOCJwkScnN5B+8JQg5zfBkq7etGuTllXVzBd1oMvAIOSbY13C/J/tIgMLrwoMQEAAAAASUVORK5CYII="/>
+						</a>
+						<a href="">
+							<img class="hasWhiteFiler" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAptJREFUSEuFljtoVUEQhr/JAxFBlCCChU0iQUx8YCyjlaWSQgVBG8sEBVOIhQhiYSGIQqzSRoxFkFiJjVxsRJsYQhAkRcBKG8EIYh7j3XP2ZGcfV09xOHd3nv/M/HNFAK1eRE84EgSNrwvyVjnW3b6xWtaoP8+MepnCuY3WXYNNI/ZTyXayEdQKQTRHVihAIf2gkwijqAx5EEMsAQ8H7BLwDngMfEkBqTOIn3Ev3Btl5s1n9fC6AusKE8B0Wg/7+yTwAejKoCvEX2iQDWAE+NQYTTN4CYwVUC8kWkl9UxgGLgJTtZDMgV7o5GAVOFiw9hXhAcqyQJ/CIHAbcPLOwYjAR9/pK8DAtoOkQ9aAXclEvPER/QT2efnvwBHgNfCrXbM9wH6v5+R2lxx0CWwm8+YMHfLGrgBnBFShBTIjaLfWHeTRqQbW1aG3BJE7/BPL8hC41Y78KTAe10amQK8Dr4BzIWvZFLSnDtQNY3h6gPUIHuEayrxAS4WhhFMWBY4p3G1bumeabAvojiGqgXVvd2kbcgJkVtC3KhxN+GpB4IQKd1DuJ7WsQ/csYDP3Jdi+nUHlKugThBuJAze5N4F54LxxYGoQQ+Qijx1UGclx0J3AZeC0T7AFPAd2eJowyMpvL18jkfDcmmZtyqrAmMJC0i2jwCxwIGnrH4LubbqxdhAkHFkN1NVvdkD1vdWe2DlgGehrRz8IcrbDEvkMHC7MQeXqBcKlmKILu8GGnFG9PAN1M2MgCgqngPedyS4Gw7ab/95AcYS52PTiv+m6YC8YzdaQmyHX1tN2S5kaRCuwH5gEXCGHM1oOPa4qLKEVXTwCVvL6pVHa7feffZuVIh7SjCoSlmj+bRT2bcFQ1lFGJhNPF06WSFbdhAZN6/8FbjbyH7tHRI0AAAAASUVORK5CYII="/>
+						</a>
+					</p>
+				</div>
+				<div class="topHeaderRight">
+					<p class="whiteText topHeaderRightHolder">
+						<a class="hasButtonAndText" href="">
+							<img class="hasWhiteFiler" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfBJREFUSEuNlT9rVUEQxX9DOuEVQsAmmFdIKr+A2KSIlU0CIlj7EVSS1iIE8sDa2sYiRdInkCKQb2AhNi+dWikELFJMuHt3793Znb2+V7w/+2Znzpw5Z67w35cA6kTF8/AhCDpE5TfE/ChT5TlCCZuoha3M6cZFYDn418CXePkNyGn+p99nB6iRPmv5AfAWOASZhXPhL8pH4DPwb0hRdQyGIqfWDvAVWA9QtCMpUJ7efgOvgKvIYDofa07MYA/hBJW1MXMsYJHcgbwEPU8g8mI9RTWBjwR+qDBzpVFf+iXwROHW1k4zqNWyAH3fB9vqrY4F3il8Kmk2Qx4vyw3oY4/3XO9jsnDzGng+SDn5w5Fjh1pHCa5itFDqD/Bw6DmxUrXcH/RCmaTILSwTHZgL2W7I3esIPQcRQm1MS0U1eM9EdZeVcTOjRaSRosp0q41iLJABKnNtAsvG8M3WdEY0B27y+RmKBDY02F7mkyu64U6EJcoz4GdCXRb4rsKWu/7tMP36fdZvwNO0tMqhRPWsQngrZkDSfynCLhG2cxd41vf8kTV4AbywFMVfPqbW9ql0ZteWUdFktyHRAXBUbMp90GOnjDlqGa0M6pbTAtiNf5yBfBBUE13+Euybcp8ibSUWAnIYHD1kngetyPaAWmbMIdwDHojMIax9/FcAAAAASUVORK5CYII="/>
+							<span>Notificaciones</span>
+						</a>
+						<a class="hasButtonAndText" href="">
+							<img class="hasWhiteFiler" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAy9JREFUSEuF1m/IXnMYB/DPhZ5Z1op3M414YWUeazUJxRtmtPxZzItNKUmyKJL824QkSWFKXpA/aV7oadhQe6GN2os1hmVjSN4q6yl/mlzOOffvfs657/s8c+q+O39+57q+1/X9fq/fCfURyOavuey91X08sX703bkgJXT3uud8/pfHAw3hjWMZRT2aYgGxPuQ1yUU4J8jkZ+JLchfeJ473Vx+iH19zdy1eKUFLB0PI8W7+gLuwu68V8ySwtUK6pdDyC7YLH0lflSArsQ63CGcV6h4Qnp+jsSCfTBC2ViC3YFbYKOODQVd6j5NwM17HQtyLF0c4GBPEOmGH9CdWVy9/WyS2Bo8RK0qvD1YCeSLYXTJfjM9RJ7wi2DtHeJsgFpFHsASbgrcHLYpLyfrlVr5tMZdgX5H1fckL+K4iflo4XrerDjE87g62JYdqpCGzcPAx1gi7pPsLyjrQVdiB60uAKY26LAluzDDTJhg0bWewNrkH29o+xlHyXCzH4VLGShkHyMPC8o4/n8bDeA131vgHFQyi/RosTc7Dj21hPQ5vUMdMyG+SC9sQLsee4ECyqk0wiPZHo4SwUPprPnsH6zO8Iy0oaJ8ZBGr8cYb0G37H6cPEQ/pmQy7KsLjq9ew8o6fW/z5hSqq5uQF/d8AsxrEi8TrOCMk1++cL0zK+buQ4YfPYS16Gh6pqn+2ZAqsqA+6vDHgIF4xV4N1KYrcKD8p4rk0wEqaWd/07mch2bMyteZR4knyr4vG2JkFHLZsqtbwpfC8bxfzbq/xOP8YqOKXyz1EsCzYk7zXcdBbVVq/btAy3B2+MzIfBwuGu0ahvLMHmekwQR8jpATdDmbaorsYnjI6KzgQt5m5E0z1WB19kMyriSnJP1/njinyEeCrksWQjPpxPssXVG4qxTsNm4uV2bxg1Wrfkx+thVjj4KeT2ZCdxkJwSVshmRNST9MxCfD1JXxpvXWcWTTj2uuTVCt3S/grm1tcbzh34bLi3Ny0dumti/x4+GMA6tUJ9E3ltMyHF2WVvqNWyP/g0mSH+aYNOjpYegN2tsZyfgIgeR87dGsj0fz4cTvh40u0jnz//AW2jGy7pt+wDAAAAAElFTkSuQmCC"/>
+							<span>Ayuda</span>
+						</a>
+						<a class="hasButtonAndText" href="">
+							<img class="hasWhiteFiler" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA1ZJREFUSEuN1m3InmMYB/DfIdnWNgthGVEKTe0tn0bCBw09H1gx72TlpWYpoSbbEB+8fECERchLytIiUYqkKa28fJhHW/nCvCxWMzEvh+u8r/O+7+u+n+eJ88PVdZ3HeR7H+f//j+M4r1BGIHuP3uf4mNnS39vdMbo6/sP30MNMC6u/obkbILQBKoyQg/c6O4tYHXJVshQn1eXf4DO8I2yV/pyJiU6ACnMY8QI8WZ1OMVZey/wu3IT3+0SNYJiB303NSTfWDQcwl3LKWB7y7+RzHIYDwtwK+3Y80gk8ADU6FzY2G0qAfbiTOJdcIzzQULGhBn2QuIvcirfwMI4U1kuPjUg+pt2EsE36DedhN7GHLDIdjx/r5gUoOszHCdX2AWbjbHzcpavP73zyayxsNl+HF7CWeDbk1mT1WPo+h+ubuYJ2c93zPCaDJcnBfgX0Kbq5ivollgX/JK9iDW5AcdiOVrgJbMN2YiV5CL7A6cHFyZvjAd7GhbgVj1dXO4nTQi6rwnZAxMKQe7LV6ohqKEI/hGdwYy9Ap0C+JY8TlslelpSxj1hAHo29g2wYpt7+RuB5xDEhf8pwhvRpr0bC8pJdZWl/XxF2zhjP//NztHrJX3pZNYrA/mBe25JCt6p771N8jOhRZRmcpyA7vJy8RdDCmCRPKQJrC6mM73FssCj5bgB2GGyvcJS0MPghWYEd2InFQ5FbZy/jCqzDEzXADmIFuVLY3ue0oinC/iwclDG7VyvhNulRvIhrhwHaE11dDeX0BUUZpRauaQrslgbJU2OCTATbsi2qs6rtK5zaILisQfB6j6JON51DTraVGZeTr7X5H1tCvpLhygGC1tuWWh+bmmTcTF6FlxoWSrEuwR/jFJXv8/EuvVZxZtVgD36tLaHkfBmFnqJJaQ2LiZPJN3AozsFHA2XHYBdUG6T727x3By7FKuHeJpnaDhvukTYHn2S5E8TGXiWHdXKgX29htw7aWC1nd+O++n4gmJst5KXReMv2spkV/J49FJEh1+ewAwzO3UnT8U7uIjyNRVNQ1omq3y5iLflhl5bhLTkSa8qlXzi+pPaoItyJ9crcXfI9eK82tb+Ghxi7k6c3TPOjMeXqm+YunGFqFHD3L2HU0pFoKmnTxw//Ao+/Fy8kpj6oAAAAAElFTkSuQmCC"/>
+							<span> Español-Colombia v</span>
+						</a>
+						<a href="">Registrarse</a> | <a href="">Iniciar Sesión</a>
+					</p>
+				</div>
+			</div>
+			<div class="bottomHeader">
+				<div class="logoDiv">
+
+				</div>
+				<div class="moreButtonsDiv">
+
+				</div>
+				<div class="shopKartDiv">
+					<img class="hasWhiteFiler" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAh9JREFUSEuFli1sVUEQhb8JAQGySYMj6OIQVFXVIHCIGghVBJ6pgaCaVDapbAmCEIohCBwCg6giIFBFYDA1TYpomiAIYtq792dndnbzrnjvvr2zO3POnDP3Cd0lgKaP4d4uCYJOj1O8vezesN6f0758zlRJTjbcD7uH0JDdJchBdrM/KCO2J7fQewQ9ScJflNfAxliOra5eqYfhCjU/tOjBqgpfTFvqVFZ6ULa0ZPE5yDboJ+DexHvguo3FIa6ELQDHApcUboAcJWR18iuoPKFi+coUyTvQB718K9qbswR8ANaSAxpAl4GvsTwfHYrLG34Ct0aLTctFvw6BJZBHgu73QIIxvElhH+Qh6AuE7VEgVXUIPFZ4BXwXuOO6MFSSTJd3X0P4g3IFuA6c9AKZCgtqv9oH0X3fBn60KhkqXVd4A3wG7o7jJzrZ07wLMhP0rQrrfl4Fug4QVtDU3K7JU+2+MO+SJVQOQf8hLKKchVb0eW4Cvy/cfwqyCPrftqvu0Nz6A9AV4Bmw01DolsDm0LMnJdleRTHdmsD7cZrPsUAn728OZUvLhqnLwC9INGRiC1kJ+lHhfhkTnTzfpZMdcmh7pDsVWclmjScse8BT4OWFdGeF3/IzYdYpzfqjgSAMEDuRevdkiqzbcsGjioO9KjQDHoHtYnhWm6aVqVlQVE9r+lWfyuMr05urGNG+pyG0mJBBRR7tHM8VL4hWMvs35xy3Nu8fyBfn3AAAAABJRU5ErkJggg=="/>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="advertisements">
+
+		</div>
+		<div class="optionButtons">
+
+		</div>
+		<div class="firstBuy">
+
+		</div> -->
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+	}
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	.topHeader {
+		display: flex;
+		justify-content: space-between;
+	}
+	.whiteText {
+		color: white;
+	}
+	a {
+		text-decoration: none;
+		color:inherit;
+	}
+	.hasWhiteFiler {
+		filter: invert();
+	}
+	.header {
+		background-color: rgb(245, 62, 45);
+		padding: 0 4%;
+	}
+	.topHeaderLeft {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		min-height: 40px;		
+	}
+	.hasButtonAndText {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.topHeaderRightHolder {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 40px;
+		gap: 20px;
+	}
+</style>
