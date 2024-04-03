@@ -29,11 +29,11 @@ const { title } = Astro.props;
 						<Icon class="size-6" name="mdi:search" />
 					</div>
 				</div>
-				<a href="" class="text-white flex items-center gap-x-1 ml-5">
+				<a href="" class="text-white flex items-center justify-center mx-3">
 					<Icon class="size-7" name="mdi:qrcode" />
 					<p class="w-24 text-xs">Descarga la app de AliExpress</p>
 				</a>				
-				<a href="" class="text-white flex items-center gap-x-1 mr-3">
+				<a href="" class="text-white flex items-center justify-center mx-3">
 					<!-- <Icon class="size-7" name="mdi:person-outline" /> -->
 					<Icon class="w-6 h-4" name="flagpack:co" />
 					<!-- <img class="w-6 h-4" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt=""> -->
@@ -41,7 +41,7 @@ const { title } = Astro.props;
 						<span class="font-medium flex items-center">COP<Icon name="mdi:keyboard-arrow-down" /></span>						
 					</p>
 				</a>
-				<a href="" class="text-white flex items-center gap-x-1 ml-5">
+				<a href="" class="text-white flex items-center mx-3 justify-center">
 					<Icon class="size-7" name="mdi:person-outline" />
 					<p class="text-xs w-40">
 						¡Bienvenido! <br />
@@ -51,7 +51,7 @@ const { title } = Astro.props;
 						</span>						
 					</p>
 				</a>
-				<a href="" class="text-white flex items-center gap-x-1 ml-5 w-30">
+				<a href="" class="text-white flex items-center right-0 mx-3 justify-center w-30">
 					<Icon class="size-7" name="mdi:shopping-cart-outline" />
 					<div class="">
 						<p class="text-xs font-medium bg-white text-black rounded-xl w-6 text-center">
@@ -62,46 +62,55 @@ const { title } = Astro.props;
 				</a>
 			</div>
 			<!-- <div class="container flex justify-around text-white mb-2 items-center"> -->
-			<div class="container flex justify-around text-white mb-2 items-center">
-				<div class="group hover:bg-white h-10 flex relative text-lg rounded-full border-[1px] text-center px-4">
-					<menu class="group-hover:block hidden left-0 w-full top-7 bg-white text-black absolute">
-						<ul>
-							<li>Opción 1</li>
-							<li>Opción 2</li>
-							<li>Opción 3</li>
+			<div class="container flex justify-around text-white mb-4 items-center">
+				<div class="group hover:bg-white hover:border-none hover:px-[17px] h-10 flex relative text-lg rounded-full border-[1px] text-center px-4">
+					<menu class="group-hover:block hidden left-0 w-full top-5 bg-white text-black absolute">
+						<div class="h-5 bg-white"></div>
+						<ul class="rounded-b-2xl border-b-2 shadow-lg shadow-gray-200 max-h-36 overflow-x-hidden overflow-y-auto">
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 1</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 2</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 3</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 4</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 5</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 6</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 7</a></li>
+							<li class="hover:bg-slate-100 hover:font-bold left-0"><a href="">Opción 8</a></li>
 						</ul>
 					</menu>
 					<div class="flex items-center gap-2 group-hover:invert">
 						<Icon class="" name="mdi:table-of-contents" />
 						<p>Todas las categorías</p>
 						<Icon class="group-hover:rotate-180" name="mdi:keyboard-arrow-down" />
-					</div>					
+					</div>
 				</div>
-				<a class="h-10 text-lg font-bold pt-[6px] text-red-500" href="">+3 artículos desde US $2.99</a>
-				<a class="h-10 text-lg pt-[6px]" href="">SuperOfertas</a>
-				<a class="h-10 text-lg pt-[6px]" href="">Plaza</a>
-				<a class="h-10 text-lg pt-[6px]" href="">Nuevo</a>
-				<a class="h-10 text-lg pt-[6px]" href="">AliExpress Business</a>
-				<div class="h-10 group text-lg relative flex justify-center flex-wrap items-center">
+				<a class="h-10 text-lg font-bold pt-[6px] text-red-500 hover:rounded-full px-4 hover:bg-gray-600" href="">+3 artículos desde US $2.99</a>
+				<a class="h-10 text-lg pt-[6px] hover:rounded-full px-4 hover:bg-gray-600" href="">SuperOfertas</a>
+				<a class="h-10 text-lg pt-[6px] hover:rounded-full px-4 hover:bg-gray-600" href="">Plaza</a>
+				<a class="h-10 text-lg pt-[6px] hover:rounded-full px-4 hover:bg-gray-600" href="">Nuevo</a>
+				<a class="h-10 text-lg pt-[6px] hover:rounded-full px-4 hover:bg-gray-600" href="">AliExpress Business</a>
+				<div class="h-10 group text-lg relative flex justify-center flex-wrap items-center hover:rounded-full px-4 hover:bg-gray-600">
 					<div class="flex justify-center flex-wrap items-center">
 						<p>Más</p>
 						<Icon class="group-hover:rotate-180" name="mdi:keyboard-arrow-down"/>
 					</div>
-					<div class="group-hover:block hidden overflow-hidden w-48 h-10 top-6 absolute">
+					<div class="group-hover:block hidden w-48 h-full top-6 absolute">
+						<div class="rotate-45 bg-white ml-[98px] mt-7 size-8"></div>	
 					</div>				
-					<menu class="group-hover:block hidden content-center min-w-48 top-14 bg-zinc-900 absolute px-2 py-1 rounded">
+					<menu class="group-hover:block hidden content-center min-w-48 top-[52px] bg-gray-50 shadow-lg shadow-gray-200 text-gray-600 absolute px-3 py-2 rounded">
 						<ul>
-							<li>Hogar y jardín</li>
-							<li>Cabello y pelucas</li>
-							<li>Moda hombre</li>
-							<li>Accesorios</li>
-							<li>Electrónica</li>
-							<li>Hogar e iluminación</li>
+							<li class="hover:bg-gray-400 hover:text-gray-50">Hogar y jardín</li>
+							<li class="hover:bg-gray-400 hover:text-gray-50">Cabello y pelucas</li>
+							<li class="hover:bg-gray-400 hover:text-gray-50">Moda hombre</li>
+							<li class="hover:bg-gray-400 hover:text-gray-50">Accesorios</li>
+							<li class="hover:bg-gray-400 hover:text-gray-50">Electrónica</li>
+							<li class="hover:bg-gray-400 hover:text-gray-50">Hogar e iluminación</li>
+							
 						</ul>
 					</menu>
 				</div>
 			</div>
 		</div>
+
 		<!-- <div class="advertisements">
 
 		</div>
@@ -112,5 +121,6 @@ const { title } = Astro.props;
 
 		</div> -->
 		<slot />
+		Footer
 	</body>
 </html>
